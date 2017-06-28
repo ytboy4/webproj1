@@ -1,0 +1,13 @@
+img {
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 50px;
+}
+
+footer {
+	background-color: #8C8096;
+	color: white;
+	font-style: bold;
+	text-align: center;
+}
