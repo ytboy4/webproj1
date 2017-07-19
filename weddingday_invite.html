@@ -34,11 +34,72 @@
             </ul>
         </nav>
         <div class="container" width="950px">
-            
-          
-
+            <div class="tagline">
+                <img class="left" src="img/come-for-the-love.png" width="600px">
+            </div>
+            <div class="details">
+                <h1>Details</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="directions">
+                <h1>Directions</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="rsvp">
+                <h1>RSVP</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div >
+                    <form method="post" class="rsvp-form" width="200px">
+                        <p class="form-align">
+                            <label class="form-align" for="name">Name: </label>
+                            <input class="form-align" type="text" name="name" id="name" size="60" maxlength="100" required>*<br>
+                        </p>
+                        <p class="form-align">
+                            <label class="form-align" for="email">Email: </label>
+                            <input class="form-align" type="email" name="email" id="name" size="40" maxlength="50" required>*<br>
+                        </p>
+                        
+                        <label class="form-align">Dietary Requirements: &nbsp;</label>
+                        <div>
+                            <input type="radio" name="choice" id="choice-yes">
+                            <label for="diet-yes">Yes</label>
+                            <div class="reveal-if-active">
+                                <input class="form-align" type="text" name="requirements" id ="requirements" class="reveal-if-active" data-require-pair="#choice-yes" size="50" maxlength="200">
+                            </div>
+                        </div>
+                        
+                        <input type="radio" name="choice" id="choice-no">
+                        <label for="diet-no">No</label><br>
+                        
+                        
+                        <input type="submit" name="submit">
+                    </form>
+                </div>
+            </div>
         </div>
-
+        <br>
+        <br>
         <div class="container">
             <p>Add to your calendar: <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=aDNuN2phMnZvYWRuMnJ2bWRqdXBpMTJpa2MgYWRhbXdoaXRlNzhAZ29vZ2xlbWFpbC5jb20&amp;tmsrc=adamwhite78%40googlemail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en-GB.gif"></a></p>
         </div>
@@ -47,6 +108,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <!-- <script src="js/forms.js"></script> -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <!-- <script>
