@@ -35,7 +35,7 @@
         </nav>
         <div class="container" width="950px">
             <div class="tagline">
-                <img class="left" src="img/come-for-the-love.png" width="600px">
+                <img class="left" src="img/Come-for-the-Love.png" width="600px">
             </div>
             <div class="details">
                 <h1>Details</h1>
@@ -70,16 +70,29 @@
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <div >
-                    <form method="post" class="rsvp-form" width="200px">
-                        <p class="form-align">
-                            <label class="form-align" for="name">Name: </label>
+                    <form action="mail_handler.php" method="post" class="rsvp-form" width="200px">
+                        <label class="form-align">Attending:</label>
+                        <div>
+                            <div>
+                                <input type="radio" name="att-choice" id="att-choice-yes">
+                                <label for="att-yes">Yes</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="att-choice" id="att-choice-no">
+                                <label for="att-no">No</label>
+                            </div>
+                        </div>
+                        <p class="form-align" id="dynamicInput">
+                            <label class="form-align" for="name">Guest 1: </label>
                             <input class="form-align" type="text" name="name" id="name" size="60" maxlength="100" required>*<br>
+                        </p>
+                        <p>
+                            
                         </p>
                         <p class="form-align">
                             <label class="form-align" for="email">Email: </label>
-                            <input class="form-align" type="email" name="email" id="name" size="40" maxlength="50" required>*<br>
+                            <input class="form-align" type="email" name="email" id="email" size="40" maxlength="50" required>*<br>
                         </p>
-                        
                         <label class="form-align">Dietary Requirements: &nbsp;</label>
                         <div>
                             <input type="radio" name="choice" id="choice-yes">
@@ -92,7 +105,7 @@
                         <input type="radio" name="choice" id="choice-no">
                         <label for="diet-no">No</label><br>
                         
-                        
+                        <input type="button" value="Add Guest" onClick="addInput('dynamicInput');">
                         <input type="submit" name="submit">
                     </form>
                 </div>
@@ -106,8 +119,9 @@
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/form-add-guest.js"></script>
         <!-- <script src="js/forms.js"></script> -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
