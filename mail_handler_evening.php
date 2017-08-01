@@ -6,11 +6,11 @@ if(isset($_POST['submit'])){
     $name = $_POST['myInputs'][0];
     $subject = "Wedding RSVP - " . $name; 
     
-    $message = "Day Guests\n\n";
+    $message = "Evening Guests\n\n";
     
     $selected_att = $_POST['att-choice'];
     $selected_diet = $_POST['choice'];
-    $dietary = $_POST['requirements'];
+    // $dietary = $_POST['requirements'];
 
     // $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
     $myInputs = $_POST["myInputs"];
@@ -21,7 +21,7 @@ if(isset($_POST['submit'])){
 
     $message .= $selected_att . "\n\n";
     $message .= $selected_diet . "\n";
-    $message .= $dietary . "\n\n";
+    // $message .= $dietary . "\n\n";
     $message .= "Song Requests:\n";
     $message .= $_POST['songs'];
 
